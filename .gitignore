@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+#Server config files
+web.config
+
 # Folder config file
 Desktop.ini
 
