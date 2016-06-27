@@ -1,0 +1,68 @@
+
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/c.css?lol=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="js/helper.js?lol=1"></script>
+    <title>Carlos Olguin Portfolio</title>
+    <link rel="shortcut icon" href="img/cicon2.ico" />
+    <meta name="Description" content="Currently doing my master on physics, with two bachelors, one in Software Engineering, and one in Physics. Photographer by night.">
+    <meta name="Keywords" content="Carlos, Olguin, Carlos Olguin, Juan Carlos Olguin Becerril, Winnipeg, Canada, Manitoba, Software Development, Physics, Photography, Portfolio">
+    <meta property="og:url"                content="http://colguin.com/landing.html" />
+    <meta property="og:type"               content="portfolio" />
+    <meta property="og:title"              content="Carlos Olguin Portfolio" />
+    <meta property="og:description"        content="Currently doing my master on physics, with two bachelors, one in Software Engineering, and one in Physics. Photographer by night." />
+    <meta property="og:image"              content="img/profile.jpg" />
+  </head>
+  <body style="background: -webkit-linear-gradient(270deg,#160f1f 0,#1c2049 15%,#212445 51%,#1d4f68 77%,#62cca4 100%); background: linear-gradient(180deg,#160f1f 0%,#1c2049 0%,#212445 0%,#1d4f68 10%,#62cca4 80%); ">
+    <div id="big" class="" data-depth="0.50">
+    </div>
+    <div id="small" class="insets" data-depth="0.50">
+    </div>
+    <div id="wing1" class="wing"></div>
+    <div id="wing2" class="wing"></div>
+    <div id="wing3" class="wing"></div>
+    <a href="#" style="color:#222948;"><div id="sftwr" class="lbl box">
+        software dev
+    </div></a>
+    <a href="#" style="color:#222948;"><div id="ph" class="lbl box">
+        physics
+    </div></a>
+    <a href="http://carlosolguin.photography" style="color:#222948;"><div id="photo" class="lbl box">
+        photography
+    </div></a>
+    <div class="footer">
+      <div class="row containMe">
+        <a style="color:#222948;" href="#"><div id="brand" class="col-md-3 col-sm-4 col-xs-4 box">CARLOS OLGUIN</div></a>
+        <div id="brand_email" class="col-md-4 col-sm-4"><a href="mailto:carlos@colguin.com">carlos@colguin.com</a></div>
+        <div id="brand_phone" class="col-md-4 col-sm-4">  (204) 232-4488</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    //hook events
+    $(document).ready(function(){__init();
+    $(".lbl").hover(h,uh);
+    $( "#small" ).hover(h, uh);});
+    $(window).on('resize', function(){$(document).ready(function(){__changed=false;__init();});});
+    window.addEventListener("orientationchange", function() {
+      $(document).ready(function(){
+        __changed=false;
+        __init();
+      });
+    }, false);
+//Google analytics... lol adblocker
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79912328-1', 'auto');
+      ga('send', 'pageview');
+
+
+    </script>
+  </body>
+
+</html>

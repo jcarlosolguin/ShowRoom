@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/splash.js"></script>
+  <script type="text/javascript">$(document).ready(function(){__init();});
+  $(window).on('resize', function(){$(document).ready(function(){__changed=false;__init();});});</script>
+  <script type="text/javascript">
+  window.addEventListener("orientationchange", function() {
+    $(document).ready(function(){
+      __changed=false;
+    	__init();
+    });
+  }, false);
+  </script>
+  <script src="js/parallax.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id='container' class="container">
+    <div id ="scene "class="scene" >
+      <div id="myName" class="layer name" data-depth=".40">CARLOS <br /> OLGUIN</div>
+      <div id="big" class="layerrr center_outter" data-depth="0.50">
+      </div>
+      <div id="small" class="layer center_inner" data-depth="1.50">
+      </div>
+      <div id="cardOn1" class="layer card card1 layerr" data-depth="0.90">
+      </div>
+      <div id="cardOn2" class="layer card card2 layerr" data-depth="1.10">
+      </div>
+      <div id="cardOn3" class="layer card card3 layerr" data-depth="1.30">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
