@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Bootstrap Case</title>
+    <title>Carlos Olguin Portfolio/DEV/</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -8,25 +8,22 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400' rel='stylesheet' type='text/css'>
+    <script src="js/viewHelper.js?lol=2"></script>
     <link rel="stylesheet" type="text/css" href="css/sftwr.css?lol=1">
     <title>Carlos Olguin Portfolio</title>
-    <link rel="shortcut icon" href="img/cicon2.ico" />
-    <meta name="Description" content="Currently doing my master on physics, with two bachelors, one in Software Engineering, and one in Physics. Photographer by night.">
+    <link rel="shortcut icon" href="img/cicondev.ico" />
+    <meta name="Description" content="Hi! My name is Carlos Olguin I'm currently doing my master on subatomic physics, I am also a Software Engineer by day, and a photographer by night.">
     <meta name="Keywords" content="Carlos, Olguin, Carlos Olguin, Juan Carlos Olguin Becerril, Winnipeg, Canada, Manitoba, Software Development, Physics, Photography, Portfolio">
     <meta property="og:url"                content="http://colguin.com/landing.html" />
     <meta property="og:type"               content="portfolio" />
     <meta property="og:title"              content="Carlos Olguin Portfolio" />
-    <meta property="og:description"        content="Currently doing my master on physics, with two bachelors, one in Software Engineering, and one in Physics. Photographer by night." />
-    <meta property="og:image"              content="img/profile.jpg" />
+    <meta property="og:description"        content="Hi! My name is Carlos Olguin I'm currently doing my master on subatomic physics, I am also a Software Engineer by day, and a photographer by night." />
+    <meta property="og:image"              content="http://colguin.com/img/profile.jpg" />
     <script type="text/javascript">
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if($('body').scrollTop()>100)
-          {
-          //  $("#head").addClass("navbar-fixed-top");
-          }
-        });
-      });
+    $(document).ready(function(){__init();
+      $(window).on('resize', function(){$(document).ready(function(){__changed=false;__init();});});
+      window.addEventListener("orientationchange", function() {$(document).ready(function(){__init();});}, false);});
+
     </script>
 
   </head>
@@ -34,23 +31,24 @@
 
     <nav id="head" class="navbar navbar-default headIt " role="navigation">
       <div class="container-fluid">
+        <div class="pull-left hidden-m hidden-sm hidden-xs" style="height:100%;display: flex;align-items: center;margin-left:1%;"><a href="http://colguin.com"><img src="img/cicondev.png" height="50%" style="margin-right:20px;" /></a></div>
           <div class="navbar-header">
             <a class="navbar-brand" style="background-color:white;height:100%;" href="http://colguin.com">CARLOS OLGUIN</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+            <button style="height:100%;margin:0;padding-right:10px;" type="button" class=" pull-right navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
               <span class="sr-only">Toggle navigation</span>
 
-              <span class="pull-left " style="width:20%"><img src="img/cicon.png" height="50%" style="margin-top:10%;" /></span>
+              <span class="pull-left " style="width:20%;"><img src="img/cicondev.png" height="70%" style="margin-top:10%;" /></span>
             </button>
           </div>
-          <div class="pull-left hidden-sm hidden-xs" style="width:20%"><a href="http://colguin.com"><img src="img/cicon.png" height="50%" style="margin-top:10%;" /></a></div>
+
           <div id="mynavbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav" style="background-color:white;">
+              <ul class="nav navbar-nav" style="background-color:white;margin:0;">
 
                   <li><a href="/">projects</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="files/CarlosOlguinCV.pdf">r&eacute;sum&eacute;/CV</a>
-                  </li>
+                  </li> -->
                   <!-- <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu">
                           <li><a href="#">Product1</a>
@@ -67,20 +65,34 @@
   </nav>
   <div id="splash">
     <div class="splash_text row">
-      <div class="col-md-7 col-sm-12 col-xs-12" style="display:flex;align-items: center;"><h1>SOFTWARE <br /> <span style="color:#2b112a">/DEV/</span></h1></div>
+      <div id="splashTitleContainer" class="col-md-7 col-sm-12 col-xs-12" style="display:flex;align-items: center;"><h1 id="splashTitle">SOFTWARE <br /> <span style="color:#2b112a">/DEV/</span></h1></div>
       <div class="col-md-1 col-sm-1 col-xs-1 hidden-sm hidden-xs" style="height:35vh; display:flex;align-items: center;background-color:white;width:3px;padding:0;margin-top:28vh;">
 
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12" style="display:flex;align-items: center;">
-        <p>Hi! My name is <strong>Carlos</strong> and I've been a Software Engineer for the past 10 years.
-          I work with many technologies but I specialize in .NET/Microsoft. <br /> <br />
-          Check out some of my personal /dev/ projects, or go back to <a style="color:#c72c3b;font-weight:bolder;" href="http://colguin.com">[the other stuff I do]</a>.
-        </p>
+        <div id="intro" class="story t2"><span style="font-weight:bold;" class="t1">Hi!</span> My name is <span style="font-weight:bold;" class="t1">Carlos</span> and I've been a Software Engineer for the past 10 years.
+          I have worked with many technologies but I specialize in .NET/Microsoft. <br /> <br />
+          Check out some of my personal <span style="font-weight:bold;" class="t1">/dev/</span> projects, or go back to <a style="color:#c72c3b;font-weight:bolder;" href="http://colguin.com">[the other stuff I do]</a>.
+          <br />
+          <a href="files/CarlosOlguinCV.pdf"><div style="display: inline-block;width:100%;" class="t2" id="curriculum">curriculum</div></a>
+        </div>
       </div>
 
     </div>
   </div>
-    <div id="budd"><p>asad</p>
+    <div id="budd" class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12" style="display:flex;align-items: center;background-color:white;">
+          <h1>Pre-loader</h1>
+          one project
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="display:flex;align-items: center;background-color:white;">
+          two project
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="display:flex;align-items: center;background-color:white;">
+          three project
+        </div>
+
+      <p>asad</p>
 
     <p>a</p>
     <p>a</p>
